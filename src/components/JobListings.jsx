@@ -8,7 +8,7 @@ const JobListings = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs';
+      const apiUrl = isHome ? 'server-9hmrn5q8e-devs-projects-2c54a8b7.vercel.app/api/jobs?_limit=3' : '/api/jobs';
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
@@ -21,7 +21,7 @@ const JobListings = ({ isHome = false }) => {
     };
 
     fetchJobs();
-  }, []);
+  }, [isHome]);
 
   return (
     <section className='bg-blue-50 px-4 py-10'>

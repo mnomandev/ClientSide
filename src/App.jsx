@@ -16,7 +16,7 @@ const App = () => {
   // Add New Job
   const addJob = async (newJob) => {
     try {
-      const res = await fetch('/api/jobs', {
+      const res = await fetch('server-9hmrn5q8e-devs-projects-2c54a8b7.vercel.app/api/jobs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const App = () => {
   
   const deleteJob = async (id) => {
     try {
-      const res = await fetch(`/api/jobs/${id}`, {
+      const res = await fetch(`server-9hmrn5q8e-devs-projects-2c54a8b7.vercel.app/api/jobs/${id}`, {
         method: 'DELETE',
       });
       
@@ -56,7 +56,7 @@ const App = () => {
   
   const updateJob = async (job) => {
     try {
-      const res = await fetch(`/api/jobs/${job.id}`, {
+      const res = await fetch(`server-9hmrn5q8e-devs-projects-2c54a8b7.vercel.app/api/jobs/${job.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

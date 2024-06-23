@@ -112,7 +112,7 @@ const JobPage = ({ deleteJob }) => {
 };
 
 const jobLoader = async ({ params }) => {
-  const res = await fetch(`/api/jobs/${params.id}`);
+  const res = await fetch(`server-9hmrn5q8e-devs-projects-2c54a8b7.vercel.app/api/jobs/${params.id}`);
   const data = await res.json();
   return data;
 };
